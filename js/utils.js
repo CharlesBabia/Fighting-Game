@@ -15,10 +15,10 @@ function determineWinner({player, enemy, timerId}){
         document.querySelector('.Result').innerHTML = 'Tie'
     
     }else if(player.health > enemy.health){
-        document.querySelector('.Result').innerHTML = 'Player Wins'
+        document.querySelector('.Result').innerHTML = 'Samurai Mack Wins'
        
     }else if(enemy.health > player.health){
-        document.querySelector('.Result').innerHTML = 'Enemy Wins'
+        document.querySelector('.Result').innerHTML = 'Kenji Wins'
        
     }
 }

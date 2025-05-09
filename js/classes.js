@@ -164,11 +164,13 @@ class Fighter extends Sprite {
     }
 
     switchSprite(Sprite){
-        if(this.image === this.sprites.death.image){
-            if(this.framesCurrent === this.sprites.death.framesMax - 1)
+        if (this.image === this.sprites.death.image) {
+            if (this.framesCurrent === this.sprites.death.framesMax - 1) {
                 this.dead = true;
-                return;
+            }
+            return; // Prevent any other animation from overriding the death animation
         }
+        
         
         if (this.image === this.sprites.attack1.image 
             && this.framesCurrent < this.sprites.attack1.framesMax - 1) {
