@@ -35,6 +35,7 @@ body{
 .login-text input{
     height: 4.7vh;
     width: 20vw;
+    border-radius: 34px;
 }
 
 .login-buttons{

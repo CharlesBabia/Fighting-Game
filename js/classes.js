@@ -168,21 +168,21 @@ class Fighter extends Sprite {
             if (this.framesCurrent === this.sprites.death.framesMax - 1) {
                 this.dead = true;
             }
-            return; // Prevent any other animation from overriding the death animation
+            return; // Death animation override
         }
         
         
         if (this.image === this.sprites.attack1.image 
             && this.framesCurrent < this.sprites.attack1.framesMax - 1) {
             return;
-        }
+        } //attack override
 
         if (this.image === this.sprites.attack2.image 
             && this.framesCurrent < this.sprites.attack2.framesMax - 1) {
             return;
         }
     
-        // Prevent overriding attack animation with takeHit animation
+        // takehit override
         if (this.image === this.sprites.takeHit.image 
             && this.framesCurrent < this.sprites.takeHit.framesMax - 1 
             && Sprite !== 'attack1') {
