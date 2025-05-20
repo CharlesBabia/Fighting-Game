@@ -40,6 +40,10 @@ if(timer === 0){
 }
 }
 
+function login(){
+
+}
+
 function PreGame(){
     const preGameBackground = new Image();
     preGameBackground.src = './img/background.png';
@@ -53,4 +57,6 @@ function PreGame(){
     document.querySelector('.pre-instructions').style.display = 'flex';
     document.querySelector('.pre-text').style.display = 'flex';
     document.querySelector('.health-container').style.display = 'none';
+    document.querySelector('#startButton').style.display = 'flex';
+    document.querySelector('#signout').style.display = 'flex';
 }

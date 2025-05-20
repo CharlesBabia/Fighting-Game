@@ -22,7 +22,15 @@ body{
     align-items: center;
     width: 100%;
     padding: 20px;
+    border-radius: 34px; 
    
+}
+
+.Health-Background{
+    background-color: red; 
+    height: 30px; 
+    width: 100%;
+    border-radius: 34px;
 }
 
 .player-health{
@@ -33,6 +41,7 @@ body{
     right: 0;
     height: 30px;
     width: 100%;
+    border-radius: 34px;
 }
 
 .enemy-health{
@@ -43,6 +52,7 @@ body{
     left: 0;
     right: 0;
     height: 30px;
+    border-radius: 34px;
 }
 
 .Parent-Div{
@@ -51,6 +61,7 @@ body{
     display: flex; 
     justify-content: flex-start;
     border: 4px solid white;
+    border-radius: 34px;
 }
 
 
@@ -90,9 +101,28 @@ body{
     font-size: 20px;
     border-radius: 20px;
     font-family: "Press Start 2p", system-ui;
+    display: none;
+}
+
+#signout{
+    position: absolute; 
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px 20px; 
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: "Press Start 2p", system-ui;
+    display: none;
 }
 
 #startButton:hover{
+    background-color: #818cf8;
+    color: black;
+    cursor: pointer;
+}
+
+#signout:hover{
     background-color: #818cf8;
     color: black;
     cursor: pointer;
@@ -147,12 +177,6 @@ body{
     display: none;
 }
 
-.Health-Background{
-    background-color: red; 
-    height: 30px; 
-    width: 100%;
-}
-
 .restart{
     position: absolute; 
     top: 90%; 
@@ -185,6 +209,8 @@ body{
     background-color: #818cf8;
     padding: 40px;
 }
+
+
 
 
 

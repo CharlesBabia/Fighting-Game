@@ -1,0 +1,63 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    background-image: url(img/background.png);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+    width: 50%;
+    
+
+
+}
+
+.login-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    gap:20px;
+}
+
+.login-text input{
+    height: 4.7vh;
+    width: 20vw;
+}
+
+.login-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.login-buttons button{
+    height: 4.7vh;
+    width: 7.7vw;
+    border-radius: 34px;
+    background-color: #818cf8;
+    font-family: "Press Start 2p", system-ui;
+    font-size: 8px;
+}
+
+.login-buttons button:hover{
+    background-color: red;
+    cursor: pointer;
+    height: 5.7vh;
+    width: 8.7vw;
+}

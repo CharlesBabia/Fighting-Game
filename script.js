@@ -11,8 +11,10 @@ restartButton.addEventListener('click', () => {
 })
 
 const startButton = document.getElementById('startButton');
+const signout = document.getElementById('signout')
 startButton.addEventListener('click', () => {
     startButton.style.display = 'none';
+    signout.style.display = 'none';
     document.querySelector('.pre-header').style.display = 'none';
     document.querySelector('.pre-instructions').style.display = 'none';
     document.querySelector('.pre-text').style.display = 'none';
@@ -20,6 +22,10 @@ startButton.addEventListener('click', () => {
     animate();
     decreaseTimer();
 });
+
+signout.addEventListener('click', function(){
+    window.location.href = "index.html";
+})
 
 c.fillRect(0, 0, canvas.width, canvas.height);
 const gravity = 0.7;
