@@ -185,7 +185,7 @@ class Fighter extends Sprite {
         // takehit override
         if (this.image === this.sprites.takeHit.image 
             && this.framesCurrent < this.sprites.takeHit.framesMax - 1 
-            && Sprite !== 'attack1') {
+            && (Sprite !== 'attack1' && Sprite !== 'attack2')) {
             return;
         }
 

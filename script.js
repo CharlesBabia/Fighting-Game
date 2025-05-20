@@ -277,7 +277,8 @@ function animate(){
 
     if(rectangularCollision({rectangle1: player, 
         rectangle2: enemy}) 
-        && player.isAttacking1 && player.framesCurrent ===4)
+        && player.isAttacking1 && player.framesCurrent ===4
+        && player.image === player.sprites.attack1.image)
         {
         enemy.takeHit('player');
         player.isAttacking1 = false;
@@ -292,7 +293,8 @@ function animate(){
 
     if(rectangularCollision({rectangle1: player, 
         rectangle2: enemy}) 
-        && player.isAttacking2 && player.framesCurrent ===4)
+        && player.isAttacking2 && player.framesCurrent ===4
+        && player.image === player.sprites.attack2.image)
         {
         enemy.takeHit('player');
         player.isAttacking2 = false;
@@ -307,7 +309,8 @@ function animate(){
 
     if(rectangularCollision({rectangle1: enemy, 
         rectangle2: player}) 
-        && enemy.isAttacking1 && enemy.framesCurrent ===2)
+        && enemy.isAttacking1 && enemy.framesCurrent ===2
+        && enemy.image === enemy.sprites.attack1.image)
         {
         enemy.isAttacking1 = false;
         player.takeHit('enemy');
@@ -322,7 +325,8 @@ function animate(){
 
     if(rectangularCollision({rectangle1: enemy, 
         rectangle2: player}) 
-        && enemy.isAttacking2 && enemy.framesCurrent ===2)
+        && enemy.isAttacking2 && enemy.framesCurrent ===2
+        && enemy.image === enemy.sprites.attack2.image)
         {
         enemy.isAttacking2 = false;
         player.takeHit('enemy');
